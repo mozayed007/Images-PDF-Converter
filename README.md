@@ -2,6 +2,10 @@
 
 A tool script that converts images ( .jpg / .png ) in sub-directories to one single PDF in the parent directory.
 
+This Tool was tailored for (Free manga Downloader, AKA : FMD): "[https://github.com/dazedcat19/FMD](https://github.com/dazedcat19/FMD/)"
+
+- It downloads the manga pages as images each chapter is a subdirectory and the check condition for clearing parent folder from subfolders' pdfs spam (deleting chapters pdfs) was  based on name check of the pdf files starting with "Ch", you can either check the condition and edit the check for subfolders correct name or suggest a modification that won't affect the last merged PDF.
+
 ## Usage
 
 The script takes in two arguments:
