@@ -32,8 +32,8 @@ os.chdir(parent_folder)
 for subfolder in os.listdir(parent_folder):
     if os.path.isdir(subfolder):
         for filename in os.listdir(subfolder):
-            if filename.endswith(('.jpg', '.JPG')):
-                filename_regex = re.compile(r'(\.jpg)|(\.jpeg)', re.IGNORECASE)
+            if filename.endswith(('.jpg', '.JPG', '.png', '.PNG', '.jpeg', '.JPEG', '.gif', '.GIF')):
+                filename_regex = re.compile(r'(\.jpg)|(\.jpeg)|(\.png)|(\.gif)', re.IGNORECASE)
                 new_name = filename_regex.sub('', filename)
                 image = Image.open(f"{subfolder}/{filename}")
                 pdf_bytes = img2pdf.convert(image.filename)
