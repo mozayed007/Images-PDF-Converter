@@ -66,4 +66,6 @@ merger.close()
 # Iterate through the files in the parent folder
 for file in os.listdir(parent_folder ): 
     if file.startswith('Ch.') and  file.endswith('.pdf'): 
+        send2trash(file)
         print(f"Deleting file {file}")
+print('Done.')        
